@@ -596,7 +596,6 @@ using namespace atcoder;
 using ll = long long;
 using ld = long double;
 const ll INF = 1LL<<60;
-const ld PI = M_PI;
 
 // macro
 #define REP(i, n) for (int i = 0; i < (n); ++i)
