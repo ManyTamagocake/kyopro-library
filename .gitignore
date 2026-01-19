@@ -1,0 +1,10 @@
+*.in
+*.out
+*.log
+
+*.exe
+*.o
+a.out
+
+.vscode/*
+
