@@ -9,7 +9,7 @@ struct Graph{
     };
 
     ll v;
-    vector<vector<Edge>> g;
+    vector<vector<Edge>> adj;
 
     Graph(ll n){
         init(n);
@@ -17,12 +17,12 @@ struct Graph{
 
     void init(ll n){
         v = n;
-        g.assign(n, {});
+        adj.assign(n, {});
         return;
     }
 
     void add_edge(ll from, ll to, ll cost){
-        g[from].push_back(Edge{to, cost});
+        adj[from].push_back(Edge{to, cost});
     }
 
     void add_undirected_edge(ll u, ll v, ll cost){
