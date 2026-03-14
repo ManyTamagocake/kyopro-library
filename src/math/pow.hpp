@@ -1,4 +1,4 @@
-mint pow(ll base, ll power){
+mint mpow(ll base, ll power){
     mint res = 1;
     mint b = base;
     while (power > 0) {
