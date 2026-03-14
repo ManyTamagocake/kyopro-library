@@ -22,6 +22,6 @@ mint COM(ll n, ll k){
     if (n < 0 || k < 0) {
         return 0;
     }
-    return fac[0] * finv[k] * finv[n - k];
+    return fac[n] * finv[k] * finv[n - k];
 }
 
