@@ -1,9 +1,11 @@
 struct UnionFind{
 	vector<ll> size, par;
+    vector<ll> edge;
 
 	UnionFind(ll n){
 		size.assign(n,1);
 		par.assign(n,-1);
+        edge.assign(n,0);
 	}
 
 	ll root(ll a){
@@ -19,12 +21,20 @@ struct UnionFind{
 		return size[root(v)];
 	}
 
+    ll get_edge(ll v){
+        return edge[root(v)];
+    }
+
 	bool merge(ll a, ll b){
-		if (root(a) == root(b)) return false;
+		if (root(a) == root(b)){
+            edge[root(a)]++;
+            return false;
+        }
 		if (size[root(a)] > size[root(b)]) {
 			swap(a,b);
 		}
 		size[root(b)] += size[root(a)];
+        edge[root(b)] += edge[root(a)] + 1;
 		par[root(a)] = root(b);
 		return true;
 	}
