@@ -1,3 +1,10 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+#include "template.hpp"
+using namespace std;
+using ll = long long;
+#endif
+
 vector<ll> dijkstra(Graph &graph, ll start){
     ll INF = 1LL << 60;
     vector<ll> dist(graph.v, INF);

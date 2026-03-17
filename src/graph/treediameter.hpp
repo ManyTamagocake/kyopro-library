@@ -1,3 +1,11 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+#include "template.hpp"
+#include "bfs.hpp"
+using namespace std;
+using ll = long long;
+#endif
+
 ll treediameter(Graph &graph){
     vector<ll> d1 = bfs(graph, 0);
     ll longest_node = -1;

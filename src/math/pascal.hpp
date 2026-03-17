@@ -1,3 +1,9 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+#endif
+
 ll max_pascal = 3000;
 vector<vector<ll>> pascal(max_pascal, vector<ll> (max_pascal));
 

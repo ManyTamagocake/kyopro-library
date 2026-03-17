@@ -1,3 +1,9 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+#endif
+
 struct Fraction{
     ll numerator;
     ll denominator;

@@ -1,3 +1,12 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+#include <atcoder/all>
+using namespace std;
+using namespace atcoder;
+using ll = long long;
+using mint = modint998244353;
+#endif
+
 mint mpow(ll base, ll power){
     mint res = 1;
     mint b = base;

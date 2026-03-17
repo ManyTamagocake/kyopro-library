@@ -1,3 +1,5 @@
+#define INCLUDED_MAIN
+
 #include <bits/stdc++.h>
 #ifndef ATCODER_MODINT_HPP
 #define ATCODER_MODINT_HPP 1

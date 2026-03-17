@@ -1,3 +1,12 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+#include <atcoder/all>
+#include "template.hpp"
+using namespace std;
+using namespace atcoder;
+using ll = long long;
+#endif
+
 ll kruskal(Graph &graph){
     vector<tuple<ll, ll, ll>> orderd;
     dsu uf(graph.v);

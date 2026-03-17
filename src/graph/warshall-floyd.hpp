@@ -1,3 +1,21 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+#include "template.hpp"
+using namespace std;
+using ll = long long;
+ll INF = 1LL << 60;
+template<class T, class U>
+bool chmin(T &a, U b){
+    if (a > b) {
+        a = b;
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+#endif
+
 vector<vector<ll>> warshall_floyd(Graph &graph){
     vector<vector<ll>> dp(graph.v, vector<ll> (graph.v, INF));
 
