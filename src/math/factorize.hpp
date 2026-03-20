@@ -1,3 +1,9 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+#endif
+
 map<ll, ll> factorize(ll n){
 	map<ll, ll> res;
 	for (ll p=2; p * p <= n; p++) {

@@ -1,5 +1,7 @@
 // #define _GLIBCXX_DEBUG
 
+#define INCLUDED_MAIN
+
 // include and namespace
 #include <bits/stdc++.h>
 #include <atcoder/all>

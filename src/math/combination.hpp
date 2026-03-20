@@ -1,3 +1,14 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+#include <atcoder/all>
+using namespace std;
+using namespace atcoder;
+using ll = long long;
+using mint = modint998244353;
+ll MOD = 998244353;
+#endif
+
+
 const int COM_MAX = 300000;
 vector<mint> fac(COM_MAX), finv(COM_MAX), inv(COM_MAX);
 

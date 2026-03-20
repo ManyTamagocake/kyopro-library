@@ -1,3 +1,9 @@
+#ifndef INCLUDED_MAIN
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+#endif
+
 struct Vec{
     ll x,y;
     ll sign;
@@ -10,7 +16,7 @@ struct Vec{
         else {
             sign = 1;
         }
-        g = abs(__gcd(inx, iny));
+        g = abs(__gcd(abs(inx), abs(iny)));
         x = inx / g;
         y= iny / g;
     }
